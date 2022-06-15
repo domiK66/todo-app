@@ -14,8 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Head>
 
     <Navbar />
-
-    <Component {...pageProps} />
+    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <Component {...pageProps} />
+    </div>
     </>
   );
 }
