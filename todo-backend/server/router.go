@@ -15,10 +15,12 @@ func setRouter() *gin.Engine {
 		api.GET("/", controllers.DefaultEndpointController)
 
 		// endpoints here:
-		api.GET("/todo-lists", controllers.GetTodolistsController)
+		api.GET("/priorities", controllers.GetPrioritiesController)
 
+		api.GET("/create", controllers.PopulateDatabase)
 
-
+		api.GET("/tasks", controllers.GetTasksController)
+		api.POST("/tasks", controllers.CreateTaskController)
 
 	}
 	return router

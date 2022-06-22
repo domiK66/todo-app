@@ -1,6 +1,6 @@
 package models
 
 type Priority struct {
-    Id string `json:"id" gorm:"primary_key"`
+    ID   uint   `json:"id"`
     Name string `json:"name"`
 }

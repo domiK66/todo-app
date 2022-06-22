@@ -15,9 +15,13 @@ func ConnectDatabase() {
 	}
   
 	database.AutoMigrate(&Task{})
-  
+	database.AutoMigrate(&Priority{})
+	database.AutoMigrate(&Todolist{})
 	DB = database
 }
+
+
+
 
 //https://sourceforge.net/projects/mingw-w64/
 //https://code.visualstudio.com/docs/cpp/config-mingw
